@@ -23,7 +23,7 @@ shadcn/ui · Framer Motion · Clash Display
 ## Getting Started
 
 ```bash
-git clone https://github.com/your-username/itrax-lms.git
+git clone https://github.com/Mohamed-samy0/itrax-lms.git
 cd itrax-lms
 npm install && npm run dev
 ```
