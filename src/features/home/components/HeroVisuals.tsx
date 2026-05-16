@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion, Transition } from "framer-motion"
+import { motion, Transition } from "framer-motion";
 import { Camera, Phone, Mic } from "lucide-react";
 
 export function HeroVisuals() {
@@ -17,25 +17,26 @@ export function HeroVisuals() {
 
   return (
     <div className="relative mt-16 w-full max-w-2xl mx-auto flex justify-center items-center">
-      <div className="relative z-10 rounded-3xl bg- shadow-2xl shadow-slate-200/50 border border-slate-100 overflow-hidden w-[260px] sm:w-[320px]">
-        <div className="relative w-full aspect-[3/4] bg-gradient-to-b from-[#edf7fa]/70 to-white">
+      <div className="relative z-10 rounded-3xl bg-card shadow-2xl shadow-primary/10 border border-border overflow-hidden w-[260px] sm:w-[320px]">
+        <div className="relative w-full aspect-[3/4] bg-gradient-to-b from-primary/10 to-card">
           <Image
             src="/assets/images/person.png"
             alt="Tutor teaching online Worldwide"
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover object-top"
             priority
           />
         </div>
 
-        <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-3 bg-white/95 backdrop-blur-sm rounded-full px-5 py-2.5 shadow-lg border border-slate-100">
-          <button className="w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-slate-200 transition-colors">
+        <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-3 bg-card/95 backdrop-blur-sm rounded-full px-5 py-2.5 shadow-lg border border-border">
+          <button className="w-9 h-9 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:bg-accent hover:text-accent-foreground transition-colors">
             <Camera className="w-4 h-4" />
           </button>
-          <button className="w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-slate-200 transition-colors">
+          <button className="w-9 h-9 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:bg-accent hover:text-accent-foreground transition-colors">
             <Phone className="w-4 h-4" />
           </button>
-          <button className="w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-slate-200 transition-colors">
+          <button className="w-9 h-9 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:bg-accent hover:text-accent-foreground transition-colors">
             <Mic className="w-4 h-4" />
           </button>
         </div>
@@ -53,7 +54,7 @@ export function HeroVisuals() {
           className="absolute left-4 top-4 z-20"
           {...floatingAnimation(0.5)}
         >
-          <div className="w-10 h-10 rounded-full overflow-hidden shadow-md border-2 border-white">
+          <div className="ww-10 h-10 rounded-full overflow-hidden shadow-md border-2 border-background">
             <Image
               src="/assets/images/Ellipse 1.png"
               alt="Student avatar"
@@ -69,7 +70,7 @@ export function HeroVisuals() {
         className="absolute -right-4 sm:-right-8 lg:-right-12 bottom-50 z-20"
         {...floatingAnimation(1)}
       >
-        <div className="flex items-center gap-2 bg-white rounded-full pl-1.5 pr-4 py-1.5 shadow-xl border border-slate-100/50">
+        <div className="flex items-center gap-2 bg-card rounded-full pl-1.5 pr-4 py-1.5 shadow-xl border border-border">
           <div className="flex -space-x-2">
             <div className="w-7 h-7 rounded-full overflow-hidden border-2 border-white">
               <Image

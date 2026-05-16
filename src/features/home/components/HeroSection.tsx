@@ -5,9 +5,9 @@ import { HeroVisuals } from "./HeroVisuals";
 export function HeroSection() {
   return (
     <section className="relative overflow-hidden min-h-screen -mt-28 pt-32 pb-12">
-      <div className="absolute inset-0 bg-gradient-to-b from-[#9fcfdf] via-[#F4F9FC] to-white -z-10" />
-
-      <div className="absolute top-12 left-0 w-20 sm:w-28 animate-float-slow z-0">
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-background to-background -z-10" />
+      
+      <div className="absolute top-20 right-0 w-24 sm:w-36 animate-float-slow z-0">
         <Image
           src="/assets/images/Group(2).png"
           alt=""
@@ -26,7 +26,7 @@ export function HeroSection() {
         />
       </div>
 
-      <div className="absolute top-20 right-0 w-24 sm:w-36 animate-float-slow z-0">
+      <div className="absolute top-12 left-0 w-20 sm:w-28 animate-float-slow z-0">
         <Image
           src="/assets/images/Group(1).png"
           alt=""
